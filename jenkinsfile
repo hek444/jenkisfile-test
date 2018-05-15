@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo "GIT_BRANCH: ${env.GIT_BRANCH#*origin/}"
+                echo "GIT_BRANCH: ${env.GIT_BRANCH}"
                 echo "GIT_AUTHOR_EMAIL: ${env.GIT_AUTHOR_EMAIL}"
             }
         }
