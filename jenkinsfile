@@ -6,8 +6,8 @@ pipeline {
     stages {
         stage('Variables') {
             steps {
-                echo "gitlabSourceRepoName: ${gitlabSourceRepoName}"
-                echo "gitlabSourceBranch: ${gitlabSourceBranch}"
+                echo "gitlabSourceRepoName:"
+                echo "gitlabSourceBranch:"
             }
         }
         stage('Example') {
