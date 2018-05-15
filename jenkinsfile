@@ -4,6 +4,12 @@ pipeline {
         CC = 'clang'
     }
     stages {
+        stage('Variables') {
+            steps {
+                echo "gitlabSourceRepoName: "${gitlabSourceRepoName}
+                echo "gitlabSourceBranch: "${gitlabSourceBranch}
+            }
+        }
         stage('Example') {
             environment {
                 DEBUG_FLAGS = '-g'
